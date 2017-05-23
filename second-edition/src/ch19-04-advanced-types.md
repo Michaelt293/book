@@ -21,7 +21,7 @@ tries to call that function with a value of type `Meters` or a plain `u32`.
 Another reason to use the newtype pattern is to abstract away some
 implementation details of a type: the wrapper type can expose a different
 public API than the private inner type would if we used it directly in order to
-restrict the functionality that is available, for example. New types can also
+restrict the functionality that is available, for example. Newtypes can also
 hide internal generic types. For example, we could provide a `People` type that
 wraps a `HashMap<i32, String>` that stores a person's ID associated with their
 name. Code using `People` would only interact with the public API we provide,
